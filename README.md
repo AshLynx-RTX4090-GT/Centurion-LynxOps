@@ -1,4 +1,3 @@
-# Centurion-LynxOps
 
 <div align="center">
   <h1>Centurion - LynxOps</h1>
