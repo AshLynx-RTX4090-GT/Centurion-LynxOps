@@ -1,7 +1,10 @@
 
 <div align="center">
   <h1>Centurion - LynxOps</h1>
-  
+
+  <div align="center">
+  <img src="forza_3.jpg" alt="Centurion-LynxOps Racing" width="800" />
+</div>
  
   
   <img src="forza.gif" alt="Centurion - LynxOps DevOps Racing" width="800" />
