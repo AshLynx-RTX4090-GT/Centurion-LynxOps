@@ -6,30 +6,45 @@
 
 ![AWS Cloud Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
 
-<div style="display: flex; justify-content: center; align-items: center; border-radius: 12px; padding: 4px; background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); background-size: 1400% 1400%; animation: rainbow 12s ease infinite; width: 80%; max-width: 600px; margin: 20px auto;">
-    <div style="background: #0d1117; border-radius: 10px; overflow: hidden; display: flex; width: 100%; height: 100%;">
-        <img src="./images/solo-leveling-sololeveling.gif" alt="Solo Leveling Gif" style="display: block; width: 100%; height: auto;" />
-    </div>
-</div>
+<p align="center">
+  <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+      .text { font: bold 20px sans-serif; fill: #fff; }
+      .spark { fill: #ffcc00; }
+      .automation { fill: #00ffcc; }
+      .pipeline { fill: #ff0066; }
+      .cloud { fill: #00aaff; }
+      .innovation { fill: #ff3300; }
+    </style>
 
-<p align="center" style="font-size: 1.2em; font-weight: bold; background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); background-size: 1400% 1400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 12s ease infinite; max-width: 800px; margin: 0 auto;">
-✨ LynxOps begins with a spark... <br/>
-⚡ It accelerates with automation... <br/>
-🏎️ It drifts through pipelines with precision... <br/>
-🌐 It scales across the cloud with unstoppable momentum... <br/>
-🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.
+  <!-- Flowing arrows -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" fill="#fff" />
+      </marker>
+    </defs>
+
+    <!-- Text nodes -->
+    <text x="10" y="40" class="text spark">✨ LynxOps begins with a spark...</text>
+    <text x="250" y="80" class="text automation">⚡ It accelerates with automation...</text>
+    <text x="500" y="120" class="text pipeline">🏎️ It drifts through pipelines with precision...</text>
+    <text x="10" y="160" class="text cloud">🌐 It scales across the cloud with unstoppable momentum...</text>
+    <text x="400" y="190" class="text innovation">🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.</text>
+
+    <!-- Animated flow lines -->
+    <line x1="200" y1="35" x2="240" y2="75" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+      <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
+    </line>
+    <line x1="450" y1="75" x2="490" y2="115" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+      <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
+    </line>
+    <line x1="300" y1="115" x2="350" y2="155" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+      <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
+    </line>
+  </svg>
 </p>
 
-<style>
-@keyframes rainbow {
-  0% {background-position: 0% 50%;}
-  50% {background-position: 100% 50%;}
-  100% {background-position: 0% 50%;}
-}
-</style>
 
-
----
 
 ## 📖 Overview
 This repository documents **AWS DevOps workflows** and **Git integration** for cloud-native development and deployment.  
