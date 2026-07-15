@@ -6,7 +6,27 @@
 
 ![AWS Cloud Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
 
-<p align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LynxOps RGB Animation</title>
+  <style>
+    /* Added a dark background to make the glow pop */
+    body {
+      background-color: #0d1117; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- LynxOps Animated SVG -->
   <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
     <style>
       .text { font: bold 20px sans-serif; }
@@ -28,6 +48,7 @@
         83%  { stroke: #ffff00; filter: drop-shadow(0 0 8px #ffff00); }
         100% { stroke: #ff0000; filter: drop-shadow(0 0 8px #ff0000); }
       }
+      /* Apply animations with slight delays so they ripple */
       .rgb-text-1 { animation: rgbGlowText 6s linear infinite; }
       .rgb-text-2 { animation: rgbGlowText 6s linear infinite -1s; }
       .rgb-text-3 { animation: rgbGlowText 6s linear infinite -2s; }
@@ -36,20 +57,24 @@
       .rgb-line { 
         animation: rgbGlowLine 3s linear infinite; 
       }
+      /* Make the arrowheads match the line animation */
       .rgb-arrow {
         animation: rgbGlowText 3s linear infinite;
       }
     </style>
+    <!-- Flowing arrows with RGB Fill -->
     <defs>
       <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
         <path d="M0,0 L0,6 L9,3 z" class="rgb-arrow" />
       </marker>
     </defs>
+    <!-- Text nodes with staggered RGB classes -->
     <text x="10" y="40" class="text rgb-text-1">✨ LynxOps begins with a spark...</text>
     <text x="250" y="80" class="text rgb-text-2">⚡ It accelerates with automation...</text>
     <text x="500" y="120" class="text rgb-text-3">🏎️ It drifts through pipelines with precision...</text>
     <text x="10" y="160" class="text rgb-text-4">🌐 It scales across the cloud with unstoppable momentum...</text>
     <text x="400" y="190" class="text rgb-text-5">🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.</text>
+    <!-- Animated flow lines with RGB Stroke -->
     <line x1="200" y1="35" x2="240" y2="75" stroke-width="2" marker-end="url(#arrow)" class="rgb-line">
       <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
     </line>
@@ -60,8 +85,9 @@
       <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
     </line>
   </svg>
-</p>
 
+</body>
+</html>
 ---
 
 ## 📖 Overview
