@@ -3,6 +3,12 @@
 ![DevOps Racing Forza](file:///M:/B.Tech%20E-%20books%20(Centurion%20University%20of%20Technology%20&%20Managements)/3RD%20YEAR/5TH%20SEMESTER%20(CLOUD%20TECHNOLOGY%20DOMAIN)/CLOUD%20DEVELOPMENT%20&%20DevOps/forza.gif)
 
 
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=1000&color=FF595E;FFCA3A;8AC926;1982C4&center=true&vCenter=true&width=850&lines=Centurion-LynxOps:+Full+Throttle+DevOps.;Centurion-LynxOps:+Accelerating+Your+Journey+to+the+Cloud.;Shift+Your+Deployments+into+High+Gear.;Code+Fast,+Deploy+Faster." alt="Typing SVG" />
+  </a>
+</div>
+
 # 🚀 AWS DevOps Project – Centurion LynxOps
 
 ![AWS Cloud Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
