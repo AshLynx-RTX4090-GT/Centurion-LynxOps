@@ -6,6 +6,10 @@
   <img src="forza_3.jpg" alt="Centurion-LynxOps Racing" width="800" />
 </div>
 
+<div align="center">
+  <img src="forza.gif" alt="Centurion-LynxOps Racing" width="800" />
+</div>
+
 
 <div align="center">
   <a href="https://git.io/typing-svg">
