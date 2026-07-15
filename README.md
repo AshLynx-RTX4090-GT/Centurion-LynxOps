@@ -6,16 +6,28 @@
 
 ![AWS Cloud Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
 
----
+<div style="display: flex; justify-content: center; align-items: center; border-radius: 12px; padding: 4px; background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); background-size: 1400% 1400%; animation: rainbow 12s ease infinite; width: 80%; max-width: 600px; margin: 20px auto;">
+    <div style="background: #0d1117; border-radius: 10px; overflow: hidden; display: flex; width: 100%; height: 100%;">
+        <img src="./images/solo-leveling-sololeveling.gif" alt="Solo Leveling Gif" style="display: block; width: 100%; height: auto;" />
+    </div>
+</div>
 
-## ✨ Dynamic Introduction
-🌟 **LynxOps begins with a spark...**  
-⚡ **It accelerates with automation...**  
-🏎️ **It drifts through pipelines with precision...**  
-🌐 **It scales across the cloud with unstoppable momentum...**  
-🔥 **LynxOps is the rhythm of speed, agility, and innovation in DevOps.**
+<p align="center" style="font-size: 1.2em; font-weight: bold; background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); background-size: 1400% 1400%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: rainbow 12s ease infinite; max-width: 800px; margin: 0 auto;">
+✨ LynxOps begins with a spark... <br/>
+⚡ It accelerates with automation... <br/>
+🏎️ It drifts through pipelines with precision... <br/>
+🌐 It scales across the cloud with unstoppable momentum... <br/>
+🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.
+</p>
 
----
+<style>
+@keyframes rainbow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+</style>
+
 
 ---
 
