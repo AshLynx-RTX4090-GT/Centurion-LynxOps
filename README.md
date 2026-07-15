@@ -9,42 +9,60 @@
 <p align="center">
   <svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
     <style>
-      .text { font: bold 20px sans-serif; fill: #fff; }
-      .spark { fill: #ffcc00; }
-      .automation { fill: #00ffcc; }
-      .pipeline { fill: #ff0066; }
-      .cloud { fill: #00aaff; }
-      .innovation { fill: #ff3300; }
+      .text { font: bold 20px sans-serif; }
+      @keyframes rgbGlowText {
+        0%   { fill: #ff0000; filter: drop-shadow(0 0 8px #ff0000); }
+        17%  { fill: #ff00ff; filter: drop-shadow(0 0 8px #ff00ff); }
+        33%  { fill: #0000ff; filter: drop-shadow(0 0 8px #0000ff); }
+        50%  { fill: #00ffff; filter: drop-shadow(0 0 8px #00ffff); }
+        67%  { fill: #00ff00; filter: drop-shadow(0 0 8px #00ff00); }
+        83%  { fill: #ffff00; filter: drop-shadow(0 0 8px #ffff00); }
+        100% { fill: #ff0000; filter: drop-shadow(0 0 8px #ff0000); }
+      }
+      @keyframes rgbGlowLine {
+        0%   { stroke: #ff0000; filter: drop-shadow(0 0 8px #ff0000); }
+        17%  { stroke: #ff00ff; filter: drop-shadow(0 0 8px #ff00ff); }
+        33%  { stroke: #0000ff; filter: drop-shadow(0 0 8px #0000ff); }
+        50%  { stroke: #00ffff; filter: drop-shadow(0 0 8px #00ffff); }
+        67%  { stroke: #00ff00; filter: drop-shadow(0 0 8px #00ff00); }
+        83%  { stroke: #ffff00; filter: drop-shadow(0 0 8px #ffff00); }
+        100% { stroke: #ff0000; filter: drop-shadow(0 0 8px #ff0000); }
+      }
+      .rgb-text-1 { animation: rgbGlowText 6s linear infinite; }
+      .rgb-text-2 { animation: rgbGlowText 6s linear infinite -1s; }
+      .rgb-text-3 { animation: rgbGlowText 6s linear infinite -2s; }
+      .rgb-text-4 { animation: rgbGlowText 6s linear infinite -3s; }
+      .rgb-text-5 { animation: rgbGlowText 6s linear infinite -4s; }
+      .rgb-line { 
+        animation: rgbGlowLine 3s linear infinite; 
+      }
+      .rgb-arrow {
+        animation: rgbGlowText 3s linear infinite;
+      }
     </style>
-
-  <!-- Flowing arrows -->
     <defs>
       <marker id="arrow" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
-        <path d="M0,0 L0,6 L9,3 z" fill="#fff" />
+        <path d="M0,0 L0,6 L9,3 z" class="rgb-arrow" />
       </marker>
     </defs>
-
-    <!-- Text nodes -->
-    <text x="10" y="40" class="text spark">✨ LynxOps begins with a spark...</text>
-    <text x="250" y="80" class="text automation">⚡ It accelerates with automation...</text>
-    <text x="500" y="120" class="text pipeline">🏎️ It drifts through pipelines with precision...</text>
-    <text x="10" y="160" class="text cloud">🌐 It scales across the cloud with unstoppable momentum...</text>
-    <text x="400" y="190" class="text innovation">🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.</text>
-
-    <!-- Animated flow lines -->
-    <line x1="200" y1="35" x2="240" y2="75" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+    <text x="10" y="40" class="text rgb-text-1">✨ LynxOps begins with a spark...</text>
+    <text x="250" y="80" class="text rgb-text-2">⚡ It accelerates with automation...</text>
+    <text x="500" y="120" class="text rgb-text-3">🏎️ It drifts through pipelines with precision...</text>
+    <text x="10" y="160" class="text rgb-text-4">🌐 It scales across the cloud with unstoppable momentum...</text>
+    <text x="400" y="190" class="text rgb-text-5">🔥 LynxOps is the rhythm of speed, agility, and innovation in DevOps.</text>
+    <line x1="200" y1="35" x2="240" y2="75" stroke-width="2" marker-end="url(#arrow)" class="rgb-line">
       <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
     </line>
-    <line x1="450" y1="75" x2="490" y2="115" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="450" y1="75" x2="490" y2="115" stroke-width="2" marker-end="url(#arrow)" class="rgb-line">
       <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
     </line>
-    <line x1="300" y1="115" x2="350" y2="155" stroke="#fff" stroke-width="2" marker-end="url(#arrow)">
+    <line x1="300" y1="115" x2="350" y2="155" stroke-width="2" marker-end="url(#arrow)" class="rgb-line">
       <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" repeatCount="indefinite" />
     </line>
   </svg>
 </p>
 
-
+---
 
 ## 📖 Overview
 This repository documents **AWS DevOps workflows** and **Git integration** for cloud-native development and deployment.  
@@ -91,23 +109,10 @@ It serves as a guide for students and professionals working on **Cloud Technolog
 ---
 
 ## 📂 Project Structure
+```text
 Centurion-LynxOps/
 │── src/                # Source code
 │── docs/               # Documentation
 │── scripts/            # Automation scripts
 │── .github/workflows/  # CI/CD pipelines
 │── README.md           # Project guide
-
----
-
-## ✅ Best Practices
-- Always use **feature branches** for new development.
-- Write **clear commit messages**.
-- Automate deployments with **CI/CD pipelines**.
-- Monitor applications using **CloudWatch dashboards**.
-
----
-
-## 📌 Contributors
-- **Ashirbad** – Project Lead  
-- Centurion University of Technology & Management – Cloud Technology Domain
