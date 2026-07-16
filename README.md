@@ -63,6 +63,43 @@ It serves as a guide for students and professionals working on **Cloud Technolog
 
 ---
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centurion - LynxOps</title>
+</head>
+<body style="background-color: #0d1117; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="150">
+      <defs>
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="6" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Fira Code', 'Segoe UI', monospace" font-size="55" font-weight="900" filter="url(#glow)">
+        Centurion-LynxOps
+        <animate 
+          attributeName="fill" 
+          values="#ff0000;#ffff00;#00ff00;#00ffff;#0000ff;#ff00ff;#ff0000" 
+          dur="5s" 
+          repeatCount="indefinite" 
+        />
+      </text>
+    </svg>
+
+</body>
+</html>
+
+
+
+
+
 ## 📂 Project Structure
 ```text
 Centurion-LynxOps/
