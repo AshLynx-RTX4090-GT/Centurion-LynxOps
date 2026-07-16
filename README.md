@@ -62,6 +62,10 @@ It serves as a guide for students and professionals working on **Cloud Technolog
 | `git rm <file>` | Delete file from repo |
 
 ---
+<div align="center">
+  <img src="F_Dances_007.webp" alt="Dance Animation" width="400" />
+</div>
+
 
 ## 📂 Project Structure
 ```text
@@ -71,3 +75,6 @@ Centurion-LynxOps/
 │── scripts/            # Automation scripts
 │── .github/workflows/  # CI/CD pipelines
 │── README.md           # Project guide
+
+
+
